@@ -1,3 +1,27 @@
+
+function mergeSort(arr) {
+  let retArr = [];
+  while(arr.length > 1) {
+    let idx = 0;
+    retArr.push([mergeSort(split(arr)[idx])]);
+    idx++;
+  }
+  console.log(retArr);
+  
+
+}
+
+//
+  //for(let i = 0; i < arr.length; ++i)
+    //elem = arr[i];
+    //if(array.length === 1) 
+      //RETURN
+      //else
+      //thingArr= thingArr.concat(mergeSort(arr[i]))
+
+
+
+
 function split(arr) {
     let oddRemainder = null;
     if(arr.length % 2 !== 0) {
@@ -33,3 +57,5 @@ function mergeArr (arrInput1, arrInput2) {
   }
   return resultArr;
 }
+
+

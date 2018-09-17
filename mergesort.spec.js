@@ -13,3 +13,13 @@ describe('Merge function', function(){
       expect(mergeArr([1,5,9], [0,3,7])).toEqual([0,1,3,5,7,9]);
     });
   });
+
+  describe('MergeSort', function(){
+    it('is able to sort even array', function(){
+      expect(mergeSort([2,7,0,-1])).toEqual([-1,0,2,7]);
+    });
+    it('is able to sort odd array', function(){
+        expect(mergeSort([2,7,14,0,-1,])).toEqual([-1,0,2,7,14]);
+    });
+  });
+
